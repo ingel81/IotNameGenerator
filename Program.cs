@@ -26,7 +26,7 @@ namespace IotNameGenerator
         | | (___)/ _  )  _ \ / _  )/ ___) _  |  _)/ _ \ / ___)
         | \____/( (/ /| | | ( (/ /| |  ( ( | | |_| |_| | |    
          \_____/ \____)_| |_|\____)_|   \_||_|\___)___/|_|
-                                                              v0.1
+                                                              v0.2
         ");
 
       PrintOuput(BuildVariants(Input()));
@@ -61,6 +61,10 @@ namespace IotNameGenerator
 
         if (doEmptyFloor)
           floors.Add(string.Empty);
+      }
+      else
+      {
+        floors.Add(string.Empty);
       }
 
       return (groups, places, floors.ToArray());
